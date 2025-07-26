@@ -4,7 +4,7 @@ from django.http import HttpResponse
 
 
 def home(request):
-    return HttpResponse("Hello our friend!")
+    return render(request, 'generator/home.html', {'password' : 'gesijgiesjso11324'})
 
 def eggs(request):
     return HttpResponse('<h1>Eggs are so tasty.</h1>')
